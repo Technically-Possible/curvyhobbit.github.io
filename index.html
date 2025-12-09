@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curvy Hobbit | Links</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <img src="20251129_215644-2.jpg" alt="Curvy Hobbit Profile" class="profile-img" id="profile-img-element">
+        
+        <h1>Curvy Hobbit</h1>
+        <p>Welcome to my corner of the Shire! Good vibes, great content, and a little bit of magic ✨</p>
+
+        <hr>
+
+        <div class="link-section sfw-links">
+            <a href="[Your YouTube Channel URL]" target="_blank" class="button sfw-button">
+                📺 Join the Adventure on YouTube!
+            </a>
+        </div>
+
+        <hr>
+
+        <button id="nsfw-gate-button" class="button nsfw-gate-button">
+            🚨 Want to See My NSFW Content? (18+)
+        </button>
+
+        <div id="nsfw-links-container" class="link-section nsfw-links hidden">
+            <h3 class="nsfw-title">🔥 The Secret Door (18+ ONLY)</h3>
+            
+            <a href="https://fansly.com/CurvyHobbit/posts" target="_blank" class="button nsfw-button">
+                💖 My Fansly Main Account 100% FREE
+            </a>
+            
+            <a href="https://fansly.com/CurvyHobbitVIP/posts" target="_blank" class="button nsfw-button vip-button">
+                👑 Fansly VIP - For My Truest Fans (PPV)
+            </a>
+            
+            
+            <a href="https://bsky.app/profile/curvyhobbit.bsky.social" target="_blank" class="button socialblue-button">
+                🎁 My BlueSky see previews of set and life updates
+            </a>
+             
+             <a href="https://x.com/CURVYHOBBIT" target="_blank" class="button socialx-button">
+                🎁 My Twitter see previews of set and life updates
+            </a>
+            
+            <a href="https://cash.app/$wellokkthen" target="_blank" class="button nsfw-button support-button">
+                💸 Tip the Hobbit (Cash App)
+            </a>
+        </div>
+
+        <p class="footer-note">Thank you for visiting!</p>
+
+    </div>
+
+    <script>
+        document.getElementById('nsfw-gate-button').onclick = function() {
+            // Define the path to your NSFW GIF here
+            const nsfwGifPath = "nsfw.gif"; // <--- ***CHANGE THIS TO YOUR ACTUAL GIF FILENAME***
+            
+            // Get the image element
+            const profileImgElement = document.getElementById('profile-img-element');
+            
+            // Prompt the user for age confirmation
+            var isAdult = confirm("WARNING: This content is for adults only. By clicking 'OK', you confirm that you are 18 years of age or older.");
+            
+            if (isAdult) {
+                // 1. Change the profile image source to the GIF
+                profileImgElement.src = nsfwGifPath; 
+                profileImgElement.alt = "Curvy Hobbit NSFW Profile"; // Update alt text
+                
+                // 2. Hide the gate button and show the links
+                document.getElementById('nsfw-gate-button').classList.add('hidden');
+                document.getElementById('nsfw-links-container').classList.remove('hidden');
+            } else {
+                alert("You must be 18+ to access this content.");
+            }
+        };
+    </script>
+
+</body>
+</html>

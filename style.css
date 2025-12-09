@@ -1,0 +1,133 @@
+/* General Styling & Background */
+body {
+    font-family: 'Merriweather', serif; /* A fantasy/bookish font */
+    background-color: #f0e6c8; /* Light parchment/Shire background */
+    color: #382c1b; /* Dark text */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Start content from the top */
+    min-height: 100vh;
+    padding: 20px 10px;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 450px;
+    padding: 30px;
+    background: #fffdf7; /* Creamy white content box */
+    border: 5px solid #a38c64; /* Rustic border */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Profile Image */
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 4px solid #a38c64;
+}
+
+/* Headings and Text */
+h1 {
+    font-size: 2em;
+    color: #5d4a36; /* Darker brown for title */
+    margin-bottom: 5px;
+}
+
+p {
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.nsfw-title {
+    color: #cc0000;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #a38c64;
+    margin: 25px 0;
+}
+
+/* Button Styling */
+.link-section {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.button {
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    
+}
+
+.button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* SFW Button Colors (YouTube) */
+.sfw-button {
+    background-color: #ff0000; /* YouTube Red */
+    color: white;
+}
+
+/* NSFW Gate Button */
+.nsfw-gate-button {
+    background-color: #cc0000; /* Warning Red */
+    color: white;
+    font-size: 1.2em;
+    padding: 18px 20px;
+}
+
+/* NSFW Button Colors */
+.nsfw-button {
+    background-color: #5d4a36; /* Dark Rustic Brown */
+    color: white;
+}
+
+.vip-button {
+    background-color: #ffc107; /* Gold/VIP Color */
+    color: #382c1b;
+}
+
+.support-button {
+    background-color: #65c276; /* Cash App Green */
+    color: white;
+}
+.socialblue-button {
+    background-color: #009ffb; /* Cash App Green */
+    color: white;
+}
+.socialx-button {
+    background-color: #000000; /* Cash App Green */
+    color: white;
+}
+/* Utility Class */
+.hidden {
+    display: none !important;
+}
+
+.footer-note {
+    font-size: 0.9em;
+    color: #a38c64;
+    margin-top: 20px;
+}
